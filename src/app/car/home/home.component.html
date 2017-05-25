@@ -1,0 +1,29 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td>Brand</td>
+      <td>Model</td>
+      <td>Engine</td>
+      <td>Year of Production</td>
+      <td>Inspection Date</td>
+      <td width=275 align="center">Action</td>
+    </tr>
+  </thead>
+  <tbody>
+     <tr *ngFor="let car of cars">
+        <td>{{car.brand}}</td>
+        <td>{{car.model}}</td>
+        <td>{{car.engine}}</td>
+        <td>{{car.yearOfProduction}}</td>
+        <td>{{car.inspectionDate}}</td>
+        <td width=275> 
+            <a class="btn btn-info" routerLink="/show/{{car.id}}">Detail</a>
+            <a class="btn btn-success" routerLink="/edit/{{car.id}}">Edit</a>
+            <a class="btn btn-danger" (click)="deleteCar(car.id)">Delete</a>
+        </td>
+
+     </tr>
+
+  </tbody>
+ 
+</table>

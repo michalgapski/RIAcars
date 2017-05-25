@@ -1,0 +1,47 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Car form.Add car data here.</div>
+  <div class="panel-body">
+    <form class="form-horizontal" (submit)="updateCar()">
+      <div class="form-group">
+        <label for="brand" class="col-sm-2 control-label">Car brand  : </label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control"  [(ngModel)]="model.brand" name="brand">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="model" class="col-sm-2 control-label">Car model : </label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="model.model" name="model">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="engine" class="col-sm-2 control-label">Engine : </label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control"  [(ngModel)]="model.engine" name="engine">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="yearofproduction" class="col-sm-2 control-label">Year of production : </label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control"  [(ngModel)]="model.yearOfProduction" name="yearofprod">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inspectiondate" class="col-sm-2 control-label">Inspection date : </label>
+        <div class="col-sm-9">
+          <input type="date" class="form-control"  [(ngModel)]="model.inspectionDate" name="inspectiondate">
+        </div>
+      </div>
+  
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-success">Update</button>
+      <a  class="btn btn-info" (click)="goBack()">Cancel</a>
+    </div>
+   
+  </div>
+</form>
+
+  </div>
+</div>

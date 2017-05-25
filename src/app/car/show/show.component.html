@@ -1,0 +1,43 @@
+<div class="panel panel-default" *ngIf=car>
+  <div class="panel-heading">Car details.</div>
+  <div class="panel-body">
+    <form class="form-horizontal" >
+      <div class="form-group">
+        <label for="brand" class="col-sm-2 control-label">Brand : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{car.brand}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="model" class="col-sm-2 control-label">Model : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{car.model}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="engine" class="col-sm-2 control-label">Engine : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{car.engine}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="yearofproduction" class="col-sm-2 control-label">Year of production : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{car.yearOfProduction}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inspectiondate" class="col-sm-2 control-label">Inspection date : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{car.inspectionDate}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+          <!--<button type="submit" class="btn btn-info" (click)="goBack()">Cancel</button>-->
+          <a  class="btn btn-info" (click)="goBack()">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
